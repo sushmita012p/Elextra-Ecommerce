@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Elextra</title>
+</head>
+
+<body>
+    <!-- start topbar menu-->
+    <div class="topbar d-none d-md-block">
+        <div class="container">
+            <div class="topbar-content justify-content-between">
+                <div class="topbar-menu">
+                    <i class="fas fa-phone-volume"></i><a href="#" class="items-link">+221 33 66 22</a>
+                    <i class="fas fa-envelope"></i><a href="#" class="items-link">support@elextra.io</a>
+                </div>
+                <div class="icons">
+                    <i class="fa fa-map-marker"></i><a href="#" class="items-link">Store Locations</a>
+                    <i class="fa-solid fa-car-side"></i><a href="#" class="items-link">Track Your Order</a>
+                    <a href="#" data-toggle="dropdown" class="popup-title" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-label="false">
+                        <span class="cus-icon">$</span>
+                        <span class="cus-name">USD</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                    </ul>
+                    <a href="#" data-toggle="dropdown" class="popup-title" id="dropdownMenuLinks"
+                        data-bs-toggle="dropdown" aria-label="false">
+                        <span class="cus-name">EN</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinks">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Nepali</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end topbar menu-->
+
+    <!-- start header-->
+    <div class="header-menu" class="section-title">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-logo col-md-3 col-sm-12 col-xs-12">
+                    <div class="logo">
+                        <a href="#"><img class="main-logo mt-3" src="./assets/images/main-logo.png"></a>
+                    </div>
+                </div>
+                <div class="middle col-md-6">
+                    <div class="search-header">
+                        <div class="input-group my-3">
+                            <input type="text" class="form-control border-0 bg-light" placeholder="Search here..."
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary bg-light border-0" type="button"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle2 col-md-3">
+                    <div class="blockcart d-flex justify-content-between align-items-center mt-2">
+                        <div>
+                            <a class="d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                role="button" aria-controls="offcanvasExample">
+                                <i class="fa fa-bars text-dark" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="header me-3">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <span class="cart-products-count">0</span>
+                            </div>
+                            <div class="userinfo">
+                                <a href="#">
+                                    <i class="fa fa-user-circle"></i>
+                                    <span>My account</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end header-->
+
+    <!-- start navbar-->
+    <!-- desktop view -->
+    <div class="container d-none d-md-block">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-between w-100 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> All Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Smartphone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Computer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gaming Equipments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV & Monitors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Headphones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Speaker</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- mobile view -->
+    <div class="offcanvas offcanvas-start  w-50" tabindex="-1" id="offcanvasExample" data-bs-scroll="true"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">All Categories</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Smartphone</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Computer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gaming Equipments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV & Monitors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Headphones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Speaker</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end navbar-->
+
+    <!-- product details-->
+
+    <section id="wrapper-details">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">TV & Monitors</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">LED</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./assets/images/laptop.jpg" class="w-75" alt="image">
+                </div>
+                <div class="col-md-2">
+                    <div id="thumb-slider" class="thumb-vertical-outer">
+                        <ul class="thumb-vertical">
+                            <li class="image-additional">
+                                <a href="#" class="img thumbnail">
+                                    <img class="lazyautosizes lazyloaded w-50" data-sizes="auto"
+                                        src="./assets/images/laptop.jpg" data-src="" title="=" alt="Laptop"
+                                        sizes="56px">
+                                </a>
+                            </li>
+                            <li class="image-additional">
+                                <a href="#" class="img thumbnail active">
+                                    <img class="lazyautosizes lazyloaded w-50" data-sizes="auto"
+                                        src="./assets/images/laptop.jpg" data-src="" alt="Laptop" sizes="56px">
+                                </a>
+                            </li>
+                            <li class="image-additional">
+                                <a href="#" class="img thumbnail">
+                                    <img class="lazyautosizes lazyloaded w-50" data-sizes="auto"
+                                        src="./assets/images/laptop.jpg" data-src="" alt="Laptop" sizes="56px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 detailed-info">
+                    <p>SKU 12314124124
+                    </p>
+                    <h6 class="mt-2">LED Monitor With High Quality In the World</h6>
+                    <span class="star">
+                        <strong>4.0</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <span class="text-secondary">(223)</span>
+                    </span>
+
+                    <div class="product-price mt-2">
+                        <span class="new-price">$976.33</span>
+                        <span class="old-price text-decoration-line-through text-secondary">$1,020.99</span>
+                        <span class="discount">
+                            20%
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam molestiae omnis
+                            vitae, sit possimus maiores similique illum.</p>
+                        <p>-Direct Full Array</p>
+                        <p>-Quantam dot Technology</p>
+                        <p>-Ambient Mode</p>
+                        <p>-One Remote Control</p>
+                    </div>
+                    <div class="clearfix product-option">
+                        <span class="fw-bold">Screen
+                            Size</span>
+                        <button class="btn btn-sm">14-Inch</button>
+                        <button class="btn btn-sm">24-Inch </button>
+                        <button class="btn btn-sm">32-Inch </button>
+                        <button class="btn btn-sm">60-Inch </button>
+                    </div>
+                    <div class="container">
+                        <div class="d-flex">
+                            <div class="input-group w-auto align-items-center">
+                                <input type="button" value="-" class="btn button-minus">
+                                <input type="button" value="+" class="btn button-plus">
+                                <input type="number" value="1" name="quantity"
+                                    class="text-center">
+                                
+                            </div>
+                            <div>
+                            <input type="button" value="BUY" class="buy">
+                            <input type="button" value="ADD TO CART" class="add-cart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- product details end-->
+
+    <!-- product specificatiions-->
+    <section id="wrapper-specs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <div class="section-side">
+                        <h1 class="text-white text-center"> 4.0 </h1>
+                        <div class="star text-center">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </div>
+                        <div class="review">
+                            <p class="text-white text-center">223 Reviews</p>
+                        </div>
+                        <div class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offset-md-1 col-md-8">
+                    <div class="product-tabs tabs">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#" role="tab"
+                                    aria-controls="description" aria-selected="true">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" data-toggle="tab" href="#" role="tab"
+                                    aria-controls="product-details">Specification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" data-toggle="tab" href="#">Discussion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" data-toggle="tab" href="#">Reviews(223)</a>
+                            </li>
+                        </ul>
+
+                        <div class="product-desc">
+                            <h5> See the best picture no matter where you sit</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eius quaerat
+                                fugit harum accusantium, perferendis praesentium officia ab eveniet voluptas rem
+                                quis non, ipsa ullam necessitatibus deleniti maiores ex dolorem!</p>
+                        </div>
+                        <div class="large-image">
+                            <img src="./assets/images/slide1.jpg">
+                        </div>
+                        <div class="product-desc">
+                            <h5> See the best picture no matter where you sit</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eius quaerat
+                                fugit harum accusantium, perferendis praesentium officia ab eveniet voluptas rem
+                                quis non, ipsa ullam necessitatibus deleniti maiores ex dolorem!</p>
+                        </div>
+                        <div class="product-desc">
+                            <h5> See the best picture no matter where you sit</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eius quaerat
+                                fugit harum accusantium, perferendis praesentium officia ab eveniet voluptas rem
+                                quis non, ipsa ullam necessitatibus deleniti maiores ex dolorem!</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!--end products specifications-->
+
+    <!-- Related products -->
+    <section id="popular-search" class="section-title">
+        <div class="container mt-3">
+            <h4 class="section-head">Related Products</h4>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 mt-5">
+                <div class="owl-carousel owl-theme">
+                    <div class="col border-0">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/laptop.jpg" class="card-image card-img-top" alt="makbook">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> Makbook Pro 2020 260 SSD </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/headset.jpg" class="card-image card-img-top" alt="camera">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> Digital camera XF-21 </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/headphone.JPG" class="card-image card-img-top" alt="laptop">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> Ultra Book Thin Laptop XL-01</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/headphones.jpg" class="card-image card-img-top" alt="magic">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> 1 Set Magic Equipments </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/watch.jpg" class="card-image card-img-top" alt="monitor">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> LED Monitor 24" With High Quality </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/phone.jpg" class="card-image card-img-top" alt="camera">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> Digital camera XF-21 </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/laptop.jpg" class="card-image card-img-top" alt="laptop">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> Ultra Book Thin Laptop XL-01</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/headset.jpg" class="card-image card-img-top" alt="camera">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> Digital camera XF-21 </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/headset.jpg" class="card-image card-img-top" alt="magic">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> 1 Set Magic Equipments </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/images/headset.jpg" class="card-image card-img-top" alt="monitor">
+
+                                <div class="card-body text-center">
+                                    <p class="card-price">$1245.33</p>
+                                    <p class="card-price-disabled text-decoration-line-through text-secondary">$1300</p>
+                                    <h6 class="card-title"> LED Monitor 24" With High Quality </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="owl-prev"></div>
+                    <div class="owl-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end related products -->
+
+    <!-- recently viewd -->
+    <section id="recent-view" class="section-title">
+        <div class="container mt-3">
+            <h4 class="section-head">Recently Viewed</h4>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 mt-5">
+                <div class="owl-carousel owl-theme owl-loaded">
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headphone.JPG" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headphones.JPG" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headset.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/watch.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headphones.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headphone.JPG" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/phone.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Xbox White Joystick</h5>
+                                    <p class="card-text fw-bold">$98.4</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headphone.JPG" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Super Boost Headphones</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headphone.JPG" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./assets/images/headphone.JPG" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Fitness and Activity Tracker</h5>
+                                    <p class="card-text fw-bold">$33.3</p>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="owl-prev"></div>
+                    <div class="owl-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end recently viewed -->
+
+    <!-- newsletter -->
+    <section id="newsletter" class="section-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-4">
+                    <i class="fa-solid fa-envelopes-bulk"></i>
+                </div>
+                <div class="col-md-4 col-8 text-white">
+                    <h4 class="text-white">Sign up for Newsletter</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minus adipisci Quos
+                        minus adipisci</p>
+                </div>
+                <div class="col-md-5 col-12 offset-md-1">
+                    <div class="input-group my-3 bg-white rounded-3">
+                        <input type="text" class="form-control border-0 pt-4" placeholder="Enter your email here"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-secondary m-2 px-5 rounded-3" type="button"
+                            id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end newsletter-->
+
+    <!-- footer-->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href=""><img src="./assets/images/logo.JPG" width="75%"></a>
+                    <P class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minus
+                        adipisci, recusandae eaque
+                        itaque qui aliquam omnis neque quis pariatur velit aut dolore reiciendis deserunt aspernatur.
+                        Deleniti odit id hic!</P>
+                    <div class="social-icons d-flex mt-4">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 my-5 my-md-0">
+                    <h4 class="mb-3 fw-bold">Quick Links</h4>
+                    <ul>
+                        <li class="mb-3">About us</li>
+                        <li class="mb-3">Contact us</li>
+                        <li class="mb-3">Products</li>
+                        <li class="mb-3">Login</li>
+                        <li class="mb-3">Signup</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 my-5 my-md-0">
+                    <h4 class="mb-3 fw-bold">Customer Area</h4>
+                    <ul>
+                        <li class="mb-3">My Account</li>
+                        <li class="mb-3">Orders</li>
+                        <li class="mb-3">Tracking List</li>
+                        <li class="mb-3">Terms</li>
+                        <li class="mb-3">My Cart</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4 fw-bold">Contact</h4>
+                    <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minus adipisci Quos
+                        minus adipisci</p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <i class="fa-solid fa-headset"></i>
+                        <div>
+                            <p class="mb-0">Have any questions</p>
+                            <P class="mb-0"><a href="tel:+ 123 456 789 " class="text-color-primary">+ 123 456 789 </a>
+                            </P>
+                        </div>
+                        <a href="#" class="btn btn-outline-info">Live Chat</a>
+                    </div>
+                    <div class="d-flex">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- end footer -->
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- cdn file for owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--init owl carousel -->
+    <script src="./assets/js/script.js"> </script>
+
+</body>
+
+</html>
