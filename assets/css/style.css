@@ -244,6 +244,10 @@ i {
 .selected .owl-stage {
     padding-left: 0px !important;
 }
+.selected .card i{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 
 .card-price {
     color: #ff7020;
@@ -308,16 +312,13 @@ i {
     margin-right: 30px !important;
 }
 
-.star {
-    color: #ff7020;
-}
-
 .owl-prev:hover {
     background: none;
 }
 
 .card-price-disabled {
     font-size: 15px;
+    margin-left: 0.5rem;
 }
 
 .card-image {
@@ -433,6 +434,10 @@ i {
     right: 0;
     font-size: 50px;
 }
+#recent-view .card i{
+    padding-left: 0px !important;
+    padding-right: 0.25rem !important;
+}
 
 
 /* end recent view  */
@@ -499,7 +504,7 @@ i {
 }
 
 #myBtn:hover {
-    background: #808080;
+    background: transparent;
 }
 
 /* end of homepage style*/
@@ -551,7 +556,7 @@ i {
 
 .nav-tabs .nav-link.active {
     color: #495057;
-    border-color: red;
+    border-color:#ff7020;
 }
 
 .product-tabs.tabs ul {
@@ -571,14 +576,6 @@ i {
 
 .progress {
     background-color: #e1e1e1 !important;
-}
-
-.progress-bar {
-    background-color: #fff !important;
-}
-
-.section-side .star {
-    color: #fff !important;
 }
 
 .large-image img {
@@ -606,12 +603,6 @@ i {
     padding: 5px 20px;
     border-radius: 10px;
 }
-.button-minus{
-    margin: 0 50px;
-}
-.button-plus{
-    margin: -150px;
-}
 
 
 /* next page i.e. sidebar product style */
@@ -629,4 +620,30 @@ i {
 
 .side-image-text p {
     font-size: 15px;
+}
+.section-sidebar{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 30px;
+}
+#wrapper-details .detailed-info i{
+    padding-left: 0px !important;
+}
+#wrapper-details .description ul{
+    list-style-type: '-';
+    padding-left: 0px !important;
+}
+#wrapper-details .description li{
+    padding-left: 0.5rem !important;
+}
+#wrapper-details .product-option button:hover{
+    background-color: rgba(255, 112, 32, 0.2);
+    border: 1px solid rgba(255, 112, 32, 0.2);
+}
+#wrapper-details .product-actions button{
+    border: 1px solid rgba(255, 112, 32, 1);
+}
+#wrapper-details .product-actions button:hover{
+    background-color: rgba(255, 112, 32, 1);
+    color: #fff !important;
 }
