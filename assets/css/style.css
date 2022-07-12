@@ -290,6 +290,10 @@ i {
     right: 0;
     font-size: 50px;
 }
+#deals .card i{
+    padding-left: 0px !important;
+    padding-right: 0.25rem !important;
+}
 
 /* selected-products */
 
@@ -565,7 +569,6 @@ i {
 
 .section-side {
     margin-top: 30px;
-    background-color: #ff7020;
     border-radius: 10px;
     padding: 20px;
 }
@@ -603,6 +606,10 @@ i {
     padding: 5px 20px;
     border-radius: 10px;
 }
+#wrapper-details i{
+    padding-left: 0px !important;
+    padding-right: 0.25rem !important;
+}
 
 
 /* next page i.e. sidebar product style */
@@ -610,12 +617,22 @@ i {
 .side-image {
     position: relative;
 }
+.product-list-button{
+    border: 1px solid #ff7020;
+    background-color: #ff7020;
+    margin: 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 0;
+}
 
 .image-caption {
     position: absolute;
     bottom: 180px;
     text-align: left;
     top: 70px;
+    margin-left: 10px;
 }
 
 .side-image-text p {
@@ -625,6 +642,17 @@ i {
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px 30px;
+}
+.count-item{
+    border: none;
+}
+.product-count{
+    border: 1px solid #808080;
+    border-radius: 10px;
+    padding: 10px;
+}
+.button-plus, .button-minus{
+    border: none !important;
 }
 #wrapper-details .detailed-info i{
     padding-left: 0px !important;
@@ -641,7 +669,8 @@ i {
     border: 1px solid rgba(255, 112, 32, 0.2);
 }
 #wrapper-details .product-actions button{
-    border: 1px solid rgba(255, 112, 32, 1);
+    border: 1px solid #FF7020;
+    background-color: transparent;
 }
 #wrapper-details .product-actions button:hover{
     background-color: rgba(255, 112, 32, 1);

@@ -75,10 +75,10 @@
                 </div>
                 <div class="middle col-md-6">
                     <div class="search-header">
-                        <div class="input-group my-3">
-                            <input type="text" class="form-control border-0 bg-light" placeholder="Search here..."
+                        <div class="input-group align-items-center bg-light my-3">
+                            <input type="text" class="form-control border-0 bg-light p-4" placeholder="Search here..."
                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
+                            <div class="input-group-append bg-light">
                                 <button class="btn btn-secondary bg-light border-0" type="button"><i
                                         class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
@@ -278,13 +278,15 @@
                         <button class="btn">32-Inch </button>
                         <button class="btn">60-Inch </button>
                     </div>
-                    <div class="d-flex justify-content-between mt-5 product-actions">
-                        <div class="input-group w-auto align-items-center">
-                            <button onclick="buttonMinus();"> - </button>
-                            <input type="text" id="inc" class="text-center" value="0"></input>
-                            <button onclick="buttonPlus();"> + </button>
+                    <div class="d-flex justify-content-around mt-5 product-actions">
+                        <div class="product-count w-25">
+                        <div class="d-flex align-items-center justify-content-start me-3">
+                            <button class="button-minus" onclick="buttonMinus();"> - </button>
+                             <input type="text" id="inc" class="count-item text-center w-100" value="1"></input>
+                             <button class="button-plus" onclick="buttonPlus();"> + </button>  
                         </div>
-                        <div>
+                        </div>
+                        <div class="d-flex">
                             <button class="btn border-1 me-3 text-color-primary">BUY</button>
                             <button class="btn border-1 text-color-primary">ADD TO CART</button>
                         </div>
@@ -879,10 +881,10 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-6">
-                            <img class="img-fluid" src="./assets/images/app-store.jpg" alt="">
+                            <a href="#"><img class="img-fluid" src="./assets/images/app-store.jpg" alt="appStore"></a>
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="./assets/images/google-play.jpg" alt="">
+                            <a href="#"><img class="img-fluid" src="./assets/images/google-play.jpg" alt="googlePlay"></a>
                         </div>
                     </div>
                 </div>

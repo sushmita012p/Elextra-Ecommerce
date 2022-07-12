@@ -108,14 +108,7 @@ function topFunction() {
 };
 
 
-// let val = document.querySelector('.btn-val').value;
-// console.log(val);
-
-//     function increment(){
-//         val++;
-        
-//     }
-
+//increment and decrement button for product quantity
 let i = 0;
 function buttonPlus() {
     i++;
