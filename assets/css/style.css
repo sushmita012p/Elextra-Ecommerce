@@ -32,10 +32,12 @@ input[type="text"]:focus {
     border: none;
     box-shadow: none;
 }
-.btn:focus{
+
+.btn:focus {
     border: none;
     box-shadow: none;
 }
+
 .text-color-primary {
     color: #ff7020;
 }
@@ -122,12 +124,14 @@ i {
     font-size: 10px;
     font-weight: 700;
 }
-.blockcarts{
+
+.blockcarts {
     position: absolute;
     top: 0;
     left: 220px;
     margin-top: 5px;
 }
+
 .blockcarts .header {
     position: relative;
     height: 60px;
@@ -136,6 +140,7 @@ i {
     text-align: center;
     color: #000;
 }
+
 .blockcarts .header .cart-products-count {
     position: absolute;
     bottom: 50%;
@@ -158,6 +163,7 @@ i {
     font-weight: 700;
 
 }
+
 .usersinfo {
     background: #FF7020;
     color: #fff;
@@ -244,7 +250,8 @@ i {
 .selected .owl-stage {
     padding-left: 0px !important;
 }
-.selected .card i{
+
+.selected .card i {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
@@ -290,7 +297,8 @@ i {
     right: 0;
     font-size: 50px;
 }
-#deals .card i{
+
+#deals .card i {
     padding-left: 0px !important;
     padding-right: 0.25rem !important;
 }
@@ -438,7 +446,8 @@ i {
     right: 0;
     font-size: 50px;
 }
-#recent-view .card i{
+
+#recent-view .card i {
     padding-left: 0px !important;
     padding-right: 0.25rem !important;
 }
@@ -560,7 +569,7 @@ i {
 
 .nav-tabs .nav-link.active {
     color: #495057;
-    border-color:#ff7020;
+    border-color: #ff7020;
 }
 
 .product-tabs.tabs ul {
@@ -571,6 +580,7 @@ i {
     margin-top: 30px;
     border-radius: 10px;
     padding: 20px;
+    background-color: #ff7020;
 }
 
 .product-desc {
@@ -606,73 +616,95 @@ i {
     padding: 5px 20px;
     border-radius: 10px;
 }
-#wrapper-details i{
+
+#wrapper-details i {
     padding-left: 0px !important;
     padding-right: 0.25rem !important;
 }
 
-
-/* next page i.e. sidebar product style */
-
-.side-image {
-    position: relative;
-}
-.product-list-button{
-    border: 1px solid #ff7020;
-    background-color: #ff7020;
-    margin: 20px;
-    padding: 5px 20px;
-    border-radius: 10px;
-    color: #fff;
-    margin-left: 0;
-}
-
-.image-caption {
-    position: absolute;
-    bottom: 180px;
-    text-align: left;
-    top: 70px;
-    margin-left: 10px;
-}
-
-.side-image-text p {
-    font-size: 15px;
-}
-.section-sidebar{
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 10px 30px;
-}
-.count-item{
+.count-item {
     border: none;
 }
-.product-count{
+
+.product-count {
     border: 1px solid #808080;
     border-radius: 10px;
     padding: 10px;
 }
-.button-plus, .button-minus{
+
+.button-plus,
+.button-minus {
     border: none !important;
 }
-#wrapper-details .detailed-info i{
+
+#wrapper-details .detailed-info i {
     padding-left: 0px !important;
 }
-#wrapper-details .description ul{
+
+#wrapper-details .description ul {
     list-style-type: '-';
     padding-left: 0px !important;
 }
-#wrapper-details .description li{
+
+#wrapper-details .description li {
     padding-left: 0.5rem !important;
 }
-#wrapper-details .product-option button:hover{
+
+#wrapper-details .product-option button:hover {
     background-color: rgba(255, 112, 32, 0.2);
     border: 1px solid rgba(255, 112, 32, 0.2);
 }
-#wrapper-details .product-actions button{
+
+#wrapper-details .product-actions button {
     border: 1px solid #FF7020;
     background-color: transparent;
 }
-#wrapper-details .product-actions button:hover{
+
+#wrapper-details .product-actions button:hover {
     background-color: rgba(255, 112, 32, 1);
     color: #fff !important;
 }
+
+/* Product-list style */
+.product-lists .card {
+    border: none !important;
+    box-shadow: 0px 1px 2px 1px #dfdfdf;
+}
+
+.product-lists .card img {
+    aspect-ratio: 1/1;
+}
+
+.product-lists .card a:hover {
+    background-color: #ff7020 !important;
+    color: #fff;
+}
+
+.product-lists .card ul li:before {
+    content: '✓';
+    color: #ff7020;
+    margin-right: 10px;
+}
+
+.product-lists .card a i {
+    color: rgba(255, 112, 32, 1);
+}
+
+.product-lists .card a:hover+.product-lists .card a i {
+    color: #fff !important;
+}
+
+.filters button:hover {
+    background-color: rgba(255, 112, 32, 0.2);
+    color: #ff7020;
+}
+
+.border-color-primary {
+    border: 1px solid #FF7020 !important;
+}
+
+/* @media (max-width: 575px) {
+    .image-caption{
+        display: none;
+    }
+} */

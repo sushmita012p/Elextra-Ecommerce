@@ -113,196 +113,356 @@
     <!--end header-->
 
     <!-- product sidebar -->
-    <section id="product-sidebar">
+    <section id="product-lists" class="mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 ">
-                    <div class="section-sidebar">
-                        <h5 class="text-center"> Show all categories </h5>
-                        <p>Smartphone</p>
-                        <p>TV</p>
-                        <p>Wireless Hardware</p>
-                        <p>Wireless Hardware</p>
-                        <p>Wireless Hardware</p>
-                        <p>Smartphone</p>
-                        <p>TV</p>
-                        <p>Wireless Hardware</p>
-                        <p>Wireless Hardware</p>
-                    </div>
-                    <div class="section-side">
-                        <h5 class="text-center"> Filters </h5>
-                        <p>Price Range</p>
-                    </div>
-                </div>
-
-                <div class="offset-md-1 col-md-8">
-                    <div class="side-image">
-                        <img src="./assets/images/slide1.jpg" class="d-block w-100" alt="...">
-                        <div class="image-caption d-none d-md-block ">
-                            <p class="text-white">Most Viewed Category</p>
-                            <h4 class="text-white">Laptop & Computers Category</h4>
-                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                                quaerat.</p>
+                <div class="col-md-3 filters">
+                    <h2>Filters</h2>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected>Choose Brand</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected>Choose Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="d-flex justify-content-between mt-5">
+                        <p>Color</p>
+                        <div class="d-flex align-items-center">
+                            <input class="form-check-input mt-0 me-3" type="radio" value=""
+                                aria-label="Radio button for following text input">
+                            <p>Select All</p>
                         </div>
                     </div>
-                    <div class="side-image-text mt-5">
-                        <div class="row">
-                            <div class="col-md-4 mb-5">
-                                <img class="w-50" src="./assets/images/headset.jpg">
-                            </div>
-                            <div class="col-md-4">
-                                <p class="star mb-2">
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                </p>
-                                <h6>Makbook Pro 2020 With 260 SSD</h6>
-                                <p class="text-secondary">SKU 123141241251251</p>
-                                <p>Direct Full Array</p>
-                                <p>Quantam Dot Technology</p>
-                                <p>Ambient Mode</p>
-                                <p>One Remote Control</p>
-                            </div>
-                            <div class="col-md-4 d-flex justify-content-between"> 
-                                <div>
-                                <p>Free Delivery</p>
-                                <p class="text-decoration-line-through text-secondary">$1300</p>
-                                <p>$1200</p>
-                                <button class="product-list-button">Add to Cart</button>
-                                </div>
-                                <div>
-                                <p>Voucher 35%</p>
-                                <p><i></i></p>
-                           </div>
-                           </div>
+                    <div class="d-flex mt-3">
+                        <button class="btn border-color-primary text-color-primary me-3">White</button>
+                        <button class="btn border-color-primary text-color-primary me-3">Black</button>
+                        <button class="btn border-color-primary text-color-primary me-3">Blue</button>
+                        <button class="btn border-color-primary text-color-primary me-3">Red</button>
+                    </div>
+                    <p class="text-color-primary mt-3"><i class="fa-solid fa-plus text-color-primary"></i> Show More</p>
+                    <button class="btn background-primary text-white mt-5 me-3 w-100 rounded-10">Filters</button>
+                    <button class="btn background-primary text-white mt-2 mb-2 me-3 w-100 rounded-10">Reset Filters</button>
 
-                            <div class="col-md-4 mb-5">
-                                <img class="w-50" src="./assets/images/headphone.JPG">
-                            </div>
-                            <div class="col-md-4">
-                                <p class="star mb-2">
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                </p>
-                                <h6>AAZUZ 12X SSD Hi Tech Fan Cooling</h6>
-                                <p class="text-secondary">SKU 123141241251251</p>
-                                <p>Direct Full Array</p>
-                                <p>Quantam Dot Technology</p>
-                                <p>Ambient Mode</p>
-                                <p>One Remote Control</p>
-                            </div>
-                            <div class="col-md-4 d-flex justify-content-between"> 
-                                <div>
-                                <p>Free Delivery</p>
-                                <p class="text-decoration-line-through text-secondary">$1300</p>
-                                <p>$1200</p>
-                                <button class="product-list-button">Add to Cart</button>
+                </div>
+                <div class="col-md-9">
+                    <div style="background-image: url('./assets/images/slide1.jpg'); border-radius: 15px;"
+                        class="p-5 mb-5 text-white">
+                        <p class="text-uppercase">Most viewed Category</p>
+                        <h2>Laptops and computers</h2>
+                        <h2>categories</h2>
+                        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat.</p>
+                    </div>
+                    <div class="product-lists">
+                        <h2>Laptops and Products</h2>
+                        <div class="d-flex justify-content-between">
+                            <p class="text-secondary">showong 9 of 125 products</p>
+                            <div class="d-flex">
+                                <p class="text-secondary">show by</p>
+                                <div class="d-flex align-items-center mx-3">
+                                    <i class="fa-solid fa-circle-check text-color-primary"></i>
+                                    <p>Popularity</p>
+                                </div>
+                                <div class="d-flex align-items-center mx-3">
+                                    <i class="fa-solid fa-circle-check text-secondary"></i>
+                                    <p>Newest</p>
+                                </div>
+                                <div class="d-flex align-items-center mx-3">
+                                    <i class="fa-solid fa-circle-check text-secondary"></i>
+                                    <p>Trending</p>
                                 </div>
                                 <div>
-                                <p>Voucher 35%</p>
-                                <p><i></i></p>
-                           </div>
-                           </div>
+                                    <i class="fa-solid fa-grid text-color-primary"></i>
+                                </div>
+                                <i class="fa-solid fa-grid text-secondary"></i>
+                            </div>
+                        </div>
 
-                            <div class="col-md-4 mb-5">
-                                <img class="w-50" src="./assets/images/headphones.jpg">
-                            </div>
-                            <div class="col-md-4">
-                                <p class="star mb-2">
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                </p>
-                                <h6>PC Desktop Ultra Technology</h6>
-                                <p class="text-secondary">SKU 123141241251251</p>
-                                <p>Direct Full Array</p>
-                                <p>Quantam Dot Technology</p>
-                                <p>Ambient Mode</p>
-                                <p>One Remote Control</p>
-                            </div>
-                            <div class="col-md-4 d-flex justify-content-between"> 
-                                <div>
-                                <p>Free Delivery</p>
-                                <p class="text-decoration-line-through text-secondary">$1300</p>
-                                <p>$1200</p>
-                                <button class="product-list-button">Add to Cart</button>
+                        <div class="card mt-5 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/headphone.JPG" class="img-fluid rounded-start" alt="...">
                                 </div>
-                                <div>
-                                <p>Voucher 35%</p>
-                                <p><i></i></p>
-                           </div>
-                           </div>
-
-                            <div class="col-md-4 mb-5">
-                                <img class="w-50" src="./assets/images/phone.jpg">
-                            </div>
-                            <div class="col-md-4">
-                                <p class="star mb-2">
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                </p>
-                                <h6>Zony X201 Laptop Full Display SSD</h6>
-                                <p class="text-secondary">SKU 123141241251251</p>
-                                <p>Direct Full Array</p>
-                                <p>Quantam Dot Technology</p>
-                                <p>Ambient Mode</p>
-                                <p>One Remote Control</p>
-                            </div>
-                            <div class="col-md-4 d-flex justify-content-between"> 
-                                <div>
-                                <p>Free Delivery</p>
-                                <p class="text-decoration-line-through text-secondary">$1300</p>
-                                <p>$1200</p>
-                                <button class="product-list-button">Add to Cart</button>
+                                <div class="col-md-8">
+                                    <div class="card-body ps-5 py-3 ps-3">
+                                        <div class="d-flex">
+                                            <div>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                            </div>
+                                            <p class="text-secondary">(12)</p>
+                                            <p class="text-color-primary ms-5">Laptop</p>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <h5 class="fw-bold">Makbook Pro 2020 260 SSD</h5>
+                                                <p class="text-secondary">SKU 1234567GFSR</p>
+                                                <ul class="mt-3 ps-0">
+                                                    <li>Direct Full Array</li>
+                                                    <li>Quantum dot Technology</li>
+                                                    <li>Ambient Mode</li>
+                                                    <li>One Remote Control</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-between mb-5">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-truck text-secondary"></i>
+                                                        <p>Free Delivery</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-money-bill text-secondary"></i>
+                                                        <p>Voucher 35%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-secondary text-decoration-line-through">$33.3</p>
+                                                <p class="fs-2 text-color-primary mb-3">$534</p>
+                                                <div class="d-flex">
+                                                    <a href="" class="btn border-color-primary rounded-10">
+                                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                                        Add to Cart
+                                                    </a>
+                                                    <a href="" class="btn border-color-primary rounded-10 ms-3"><i
+                                                            class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                <p>Voucher 35%</p>
-                                <p><i></i></p>
-                           </div>
-                           </div>
-
-                            <div class="col-md-4 mb-5">
-                                <img class="w-50" src="./assets/images/laptop.jpg">
                             </div>
-                            <div class="col-md-4">
-                                <p class="star mb-2">
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                    <i class="fa fa-star text-warning"></i>
-                                </p>
-                                <h6>Makbook Pro 2020 With 260 SSD</h6>
-                                <p class="text-secondary">SKU 123141241251251</p>
-                                <p>Direct Full Array</p>
-                                <p>Quantam Dot Technology</p>
-                                <p>Ambient Mode</p>
-                                <p>One Remote Control</p>
-                            </div>
-                            <div class="col-md-4 d-flex justify-content-between"> 
-                                <div>
-                                <p>Free Delivery</p>
-                                <p class="text-decoration-line-through text-secondary">$1300</p>
-                                <p>$1200</p>
-                                <button class="product-list-button">Add to Cart</button>
+                        </div>
+                        <div class="card mt-5 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/phone.jpg" class="img-fluid rounded-start" alt="...">
                                 </div>
-                                <div>
-                                <p>Voucher 35%</p>
-                                <p><i></i></p>
-                           </div>
-                           </div>
+                                <div class="col-md-8">
+                                    <div class="card-body ps-5 py-3 ps-3">
+                                        <div class="d-flex">
+                                            <div>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                            </div>
+                                            <p class="text-secondary">(12)</p>
+                                            <p class="text-color-primary ms-5">Laptop</p>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <h5 class="fw-bold">AAZUZ 12X SSD Hi Tech Fan</h5>
+                                                <p class="text-secondary">SKU 1234567GFSR</p>
+                                                <ul class="mt-3 ps-0">
+                                                    <li>Direct Full Array</li>
+                                                    <li>Quantum dot Technology</li>
+                                                    <li>Ambient Mode</li>
+                                                    <li>One Remote Control</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-between mb-5">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-truck text-secondary"></i>
+                                                        <p>Free Delivery</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-money-bill text-secondary"></i>
+                                                        <p>Voucher 35%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-secondary text-decoration-line-through">$33.3</p>
+                                                <p class="fs-2 text-color-primary mb-3">$534</p>
+                                                <div class="d-flex">
+                                                    <a href="" class="btn border-color-primary rounded-10">
+                                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                                        Add to Cart
+                                                    </a>
+                                                    <a href="" class="btn border-color-primary rounded-10 ms-3"><i
+                                                            class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-5 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/headphone.JPG" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body ps-5 py-3 ps-3">
+                                        <div class="d-flex">
+                                            <div>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                            </div>
+                                            <p class="text-secondary">(12)</p>
+                                            <p class="text-color-primary ms-5">Laptop</p>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <h5 class="fw-bold">PC Desktop Ultra Technology</h5>
+                                                <p class="text-secondary">SKU 1234567GFSR</p>
+                                                <ul class="mt-3 ps-0">
+                                                    <li>Direct Full Array</li>
+                                                    <li>Quantum dot Technology</li>
+                                                    <li>Ambient Mode</li>
+                                                    <li>One Remote Control</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-between mb-5">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-truck text-secondary"></i>
+                                                        <p>Free Delivery</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-money-bill text-secondary"></i>
+                                                        <p>Voucher 35%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-secondary text-decoration-line-through">$33.3</p>
+                                                <p class="fs-2 text-color-primary mb-3">$534</p>
+                                                <div class="d-flex">
+                                                    <a href="" class="btn border-color-primary rounded-10">
+                                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                                        Add to Cart
+                                                    </a>
+                                                    <a href="" class="btn border-color-primary rounded-10 ms-3"><i
+                                                            class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-5 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/headphones.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body ps-5 py-3 ps-3">
+                                        <div class="d-flex">
+                                            <div>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                            </div>
+                                            <p class="text-secondary">(12)</p>
+                                            <p class="text-color-primary ms-5">Laptop</p>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <h5 class="fw-bold">Zony X201 Laptop Full Display</h5>
+                                                <p class="text-secondary">SKU 1234567GFSR</p>
+                                                <ul class="mt-3 ps-0">
+                                                    <li>Direct Full Array</li>
+                                                    <li>Quantum dot Technology</li>
+                                                    <li>Ambient Mode</li>
+                                                    <li>One Remote Control</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-between mb-5">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-truck text-secondary"></i>
+                                                        <p>Free Delivery</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-money-bill text-secondary"></i>
+                                                        <p>Voucher 35%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-secondary text-decoration-line-through">$33.3</p>
+                                                <p class="fs-2 text-color-primary mb-3">$534</p>
+                                                <div class="d-flex">
+                                                    <a href="" class="btn border-color-primary rounded-10">
+                                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                                        Add to Cart
+                                                    </a>
+                                                    <a href="" class="btn border-color-primary rounded-10 ms-3"><i
+                                                            class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-5 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/headset.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body ps-5 py-3 ps-3">
+                                        <div class="d-flex">
+                                            <div>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                                <i class="fa fa-star text-color-primary p-0"></i>
+                                            </div>
+                                            <p class="text-secondary">(12)</p>
+                                            <p class="text-color-primary ms-5">Laptop</p>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <h5 class="fw-bold">Card title</h5>
+                                                <p class="text-secondary">SKU 1234567GFSR</p>
+                                                <ul class="mt-3 ps-0">
+                                                    <li>Direct Full Array</li>
+                                                    <li>Quantum dot Technology</li>
+                                                    <li>Ambient Mode</li>
+                                                    <li>One Remote Control</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-between mb-5">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-truck text-secondary"></i>
+                                                        <p>Free Delivery</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-money-bill text-secondary"></i>
+                                                        <p>Voucher 35%</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-secondary text-decoration-line-through">$33.3</p>
+                                                <p class="fs-2 text-color-primary mb-3">$534</p>
+                                                <div class="d-flex">
+                                                    <a href="" class="btn border-color-primary rounded-10">
+                                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                                        Add to Cart
+                                                    </a>
+                                                    <a href="" class="btn border-color-primary rounded-10 ms-3"><i
+                                                            class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end product sidebar -->
+    <!-- end product sidebar-->
 
     <!-- recently viewd -->
     <section id="recent-view" class="section-title">
